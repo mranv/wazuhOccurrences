@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POC - Anubhav Gain spreadsheet file for wazuh occurrencies</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body, html {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .visualization-container {
+            transition: all 0.3s ease;
+        }
+        .visualization-container:hover {
+            transform: scale(1.02);
+        }
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .visualization-container:hover {
+                transform: none;
+            }
+        }
+        @media (min-width: 641px) and (max-width: 1024px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="gradient-bg flex items-center justify-center">
+    <div class="glass w-full h-full p-4 flex flex-col">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center text-white">POC - wazuh occurrencies 4.9.0</h1>
+        <div class="visualization-container bg-white rounded-lg shadow-2xl flex-grow flex flex-col p-2 md:p-4">
+            <div class="flex-grow flex items-center justify-center">
+                <!-- Placeholder for spreadsheet data -->
+                <img src="/api/placeholder/1200/800" alt="Placeholder for Wazuh occurrencies visualization" class="max-w-full max-h-full object-contain rounded-lg shadow-md" />
+            </div>
+            <p class="mt-2 md:mt-4 text-center text-gray-600 text-xs md:text-sm">Wazuh occurrencies data would be displayed here, responsive to all screen sizes.</p>
+        </div>
+        <p class="mt-2 md:mt-4 text-center text-white text-xs md:text-sm">This visualization of Wazuh occurrencies is responsive across all devices.</p>
+    </div>
+</body>
+</html>
